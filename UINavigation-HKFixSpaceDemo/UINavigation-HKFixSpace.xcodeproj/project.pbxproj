@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A07BAAC21AC3CFA2586DC011 /* libPods-UINavigation-HKFixSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5FA88DFE3129921F86C4E5 /* libPods-UINavigation-HKFixSpace.a */; };
 		C65F8E03212D5B240031216E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E02212D5B240031216E /* AppDelegate.m */; };
 		C65F8E06212D5B240031216E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E05212D5B240031216E /* ViewController.m */; };
 		C65F8E09212D5B240031216E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65F8E07212D5B240031216E /* Main.storyboard */; };
 		C65F8E0B212D5B250031216E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C65F8E0A212D5B250031216E /* Assets.xcassets */; };
 		C65F8E0E212D5B250031216E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65F8E0C212D5B250031216E /* LaunchScreen.storyboard */; };
 		C65F8E11212D5B250031216E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E10212D5B250031216E /* main.m */; };
+		C65F8E1A212D5F740031216E /* UINavigationBar+HKFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E19212D5F740031216E /* UINavigationBar+HKFixSpace.m */; };
+		C65F8E1E212D63560031216E /* HKNavigationFixSpaceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E1D212D63560031216E /* HKNavigationFixSpaceConfig.m */; };
+		C65F8E21212D63860031216E /* UINavigationItem+HKFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E20212D63860031216E /* UINavigationItem+HKFixSpace.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B5FA88DFE3129921F86C4E5 /* libPods-UINavigation-HKFixSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UINavigation-HKFixSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B455EB0635D3AB228B43A86 /* Pods-UINavigation-HKFixSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UINavigation-HKFixSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UINavigation-HKFixSpace/Pods-UINavigation-HKFixSpace.debug.xcconfig"; sourceTree = "<group>"; };
+		9476195076291421ED98A1E8 /* Pods-UINavigation-HKFixSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UINavigation-HKFixSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-UINavigation-HKFixSpace/Pods-UINavigation-HKFixSpace.release.xcconfig"; sourceTree = "<group>"; };
 		C65F8DFE212D5B240031216E /* UINavigation-HKFixSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UINavigation-HKFixSpace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65F8E01212D5B240031216E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C65F8E02212D5B240031216E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +33,13 @@
 		C65F8E0D212D5B250031216E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C65F8E0F212D5B250031216E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C65F8E10212D5B250031216E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C65F8E18212D5F740031216E /* UINavigationBar+HKFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+HKFixSpace.h"; sourceTree = "<group>"; };
+		C65F8E19212D5F740031216E /* UINavigationBar+HKFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+HKFixSpace.m"; sourceTree = "<group>"; };
+		C65F8E1B212D60DB0031216E /* HK_Macro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HK_Macro.h; sourceTree = "<group>"; };
+		C65F8E1C212D63560031216E /* HKNavigationFixSpaceConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HKNavigationFixSpaceConfig.h; sourceTree = "<group>"; };
+		C65F8E1D212D63560031216E /* HKNavigationFixSpaceConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKNavigationFixSpaceConfig.m; sourceTree = "<group>"; };
+		C65F8E1F212D63860031216E /* UINavigationItem+HKFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+HKFixSpace.h"; sourceTree = "<group>"; };
+		C65F8E20212D63860031216E /* UINavigationItem+HKFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+HKFixSpace.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +47,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A07BAAC21AC3CFA2586DC011 /* libPods-UINavigation-HKFixSpace.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85D27EDF5EECA54A41B06462 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B455EB0635D3AB228B43A86 /* Pods-UINavigation-HKFixSpace.debug.xcconfig */,
+				9476195076291421ED98A1E8 /* Pods-UINavigation-HKFixSpace.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C65F8DF5212D5B240031216E = {
 			isa = PBXGroup;
 			children = (
-				C65F8E00212D5B240031216E /* UINavigation-HKFixSpace */,
+				C65F8E00212D5B240031216E /* UINavigation-HKFixSpaceDemo */,
 				C65F8DFF212D5B240031216E /* Products */,
+				85D27EDF5EECA54A41B06462 /* Pods */,
+				E7E61DF3AFEEE06CCB930A48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,9 +81,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C65F8E00212D5B240031216E /* UINavigation-HKFixSpace */ = {
+		C65F8E00212D5B240031216E /* UINavigation-HKFixSpaceDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C65F8E17212D5F520031216E /* UINavigation-HKFixSpace */,
 				C65F8E01212D5B240031216E /* AppDelegate.h */,
 				C65F8E02212D5B240031216E /* AppDelegate.m */,
 				C65F8E04212D5B240031216E /* ViewController.h */,
@@ -68,7 +95,29 @@
 				C65F8E0F212D5B250031216E /* Info.plist */,
 				C65F8E10212D5B250031216E /* main.m */,
 			);
+			path = "UINavigation-HKFixSpaceDemo";
+			sourceTree = "<group>";
+		};
+		C65F8E17212D5F520031216E /* UINavigation-HKFixSpace */ = {
+			isa = PBXGroup;
+			children = (
+				C65F8E18212D5F740031216E /* UINavigationBar+HKFixSpace.h */,
+				C65F8E19212D5F740031216E /* UINavigationBar+HKFixSpace.m */,
+				C65F8E1B212D60DB0031216E /* HK_Macro.h */,
+				C65F8E1C212D63560031216E /* HKNavigationFixSpaceConfig.h */,
+				C65F8E1D212D63560031216E /* HKNavigationFixSpaceConfig.m */,
+				C65F8E1F212D63860031216E /* UINavigationItem+HKFixSpace.h */,
+				C65F8E20212D63860031216E /* UINavigationItem+HKFixSpace.m */,
+			);
 			path = "UINavigation-HKFixSpace";
+			sourceTree = "<group>";
+		};
+		E7E61DF3AFEEE06CCB930A48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B5FA88DFE3129921F86C4E5 /* libPods-UINavigation-HKFixSpace.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C65F8E14212D5B250031216E /* Build configuration list for PBXNativeTarget "UINavigation-HKFixSpace" */;
 			buildPhases = (
+				F182782F99473BE4B73D4C47 /* [CP] Check Pods Manifest.lock */,
 				C65F8DFA212D5B240031216E /* Sources */,
 				C65F8DFB212D5B240031216E /* Frameworks */,
 				C65F8DFC212D5B240031216E /* Resources */,
+				F1E18768B20F04A8408938DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,14 +187,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		F182782F99473BE4B73D4C47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UINavigation-HKFixSpace-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E18768B20F04A8408938DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UINavigation-HKFixSpace/Pods-UINavigation-HKFixSpace-frameworks.sh",
+				"${PODS_ROOT}/Reveal-SDK/RevealServer-4/iOS/RevealServer.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UINavigation-HKFixSpace/Pods-UINavigation-HKFixSpace-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C65F8DFA212D5B240031216E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C65F8E21212D63860031216E /* UINavigationItem+HKFixSpace.m in Sources */,
+				C65F8E1E212D63560031216E /* HKNavigationFixSpaceConfig.m in Sources */,
 				C65F8E06212D5B240031216E /* ViewController.m in Sources */,
 				C65F8E11212D5B250031216E /* main.m in Sources */,
 				C65F8E03212D5B240031216E /* AppDelegate.m in Sources */,
+				C65F8E1A212D5F740031216E /* UINavigationBar+HKFixSpace.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,10 +374,11 @@
 		};
 		C65F8E15212D5B250031216E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B455EB0635D3AB228B43A86 /* Pods-UINavigation-HKFixSpace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "UINavigation-HKFixSpace/Info.plist";
+				INFOPLIST_FILE = "UINavigation-HKFixSpaceDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +391,11 @@
 		};
 		C65F8E16212D5B250031216E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9476195076291421ED98A1E8 /* Pods-UINavigation-HKFixSpace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "UINavigation-HKFixSpace/Info.plist";
+				INFOPLIST_FILE = "UINavigation-HKFixSpaceDemo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
