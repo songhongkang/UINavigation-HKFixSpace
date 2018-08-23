@@ -3,5 +3,5 @@ platform :ios, '8.0'
 target 'UINavigation-HKFixSpace' do
 pod 'Masonry','~>1.1.0'
 pod 'Reveal-SDK', :git => 'https://git.coding.net/kakukeme/Reveal-SDK.git', :configurations => ['Debug']
-
+pod 'UINavigation-HKFixSpace'
 end

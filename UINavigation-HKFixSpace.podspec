@@ -25,10 +25,10 @@ s.summary      = "Solve the problem of spacing between navigation bars"
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-Solve the problem of spacing between navigation bars  Example:https://github.com/songhongkang/UINavigation-HKFixSpace
+                    Solve the problem of spacing between navigation bars  Example:https://github.com/songhongkang/UINavigation-HKFixSpace
                    DESC
 
-  s.homepage     = "https://github.com/songhongkang/UINavigation-HKFixSpace"
+  s.homepage     = "https://github.com/songhongkang/UINavigation-HKFixSpace.git"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -80,7 +80,7 @@ Solve the problem of spacing between navigation bars  Example:https://github.com
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "http://EXAMPLE/UINavigation-HKFixSpace.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/songhongkang/UINavigation-HKFixSpace.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +91,7 @@ Solve the problem of spacing between navigation bars  Example:https://github.com
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files  = "UINavigation-HKFixSpace/*"
   s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

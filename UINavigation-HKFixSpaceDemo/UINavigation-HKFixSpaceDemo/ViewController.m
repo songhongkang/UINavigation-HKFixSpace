@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <Masonry/Masonry.h>
 #import "UINavigation-HKFixSpace/HKNavigationFixSpaceConfig.h"
+#import "VC_Test.h"
 @interface ViewController ()
 
 @end
@@ -42,7 +43,13 @@
 - (void)creatUI
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    btn.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:btn];
+    
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.centerY.mas_equalTo(0);
+        make.width.height.mas_equalTo(50);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
