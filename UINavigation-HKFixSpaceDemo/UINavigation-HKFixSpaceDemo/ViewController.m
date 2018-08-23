@@ -19,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [self configNavigation];
+    [self creatUI];
+}
+
+- (void)configNavigation
+{
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setTitle:@"11" forState:UIControlStateNormal];
     btn.backgroundColor = [UIColor redColor];
@@ -28,7 +34,7 @@
     [btn1 setTitle:@"22" forState:UIControlStateNormal];
     btn1.backgroundColor = [UIColor purpleColor];
     btn1.frame = CGRectMake(0, 0, 40, 40);
-
+    
     UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn2 setTitle:@"33" forState:UIControlStateNormal];
     btn2.backgroundColor = [UIColor purpleColor];
@@ -39,17 +45,21 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn1];
 }
 
-
 - (void)creatUI
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.backgroundColor = [UIColor purpleColor];
     [self.view addSubview:btn];
-    
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
     [btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.centerY.mas_equalTo(0);
         make.width.height.mas_equalTo(50);
     }];
+}
+
+- (void)btnClick:(UIButton *)sender
+{
+    [self.navigationController pushViewController:[VC_Test new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

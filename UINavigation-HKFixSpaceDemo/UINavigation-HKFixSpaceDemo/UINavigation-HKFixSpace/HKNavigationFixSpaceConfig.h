@@ -17,5 +17,6 @@
 
 @property (nonatomic, assign,getter =isHk_allowSpace)BOOL hk_allowSpace;
 
+@property (nonatomic, assign,getter=isAllowOpenGesture)BOOL allowOpenGesture;
 + (instancetype)shared;
 @end

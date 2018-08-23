@@ -19,6 +19,8 @@
 		C65F8E21212D63860031216E /* UINavigationItem+HKFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E20212D63860031216E /* UINavigationItem+HKFixSpace.m */; };
 		C6D1A10F212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D1A10E212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m */; };
 		C6D1A154212E97F900B0D6E0 /* VC_Test.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D1A153212E97F900B0D6E0 /* VC_Test.m */; };
+		C6D1A157212E9D5B00B0D6E0 /* UINavigationController+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D1A156212E9D5B00B0D6E0 /* UINavigationController+Gesture.m */; };
+		C6D1A15A212EA3A500B0D6E0 /* UIViewController+Gesture.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D1A159212EA3A500B0D6E0 /* UIViewController+Gesture.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,10 @@
 		C6D1A10E212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HKTool.m"; sourceTree = "<group>"; };
 		C6D1A152212E97F900B0D6E0 /* VC_Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VC_Test.h; sourceTree = "<group>"; };
 		C6D1A153212E97F900B0D6E0 /* VC_Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VC_Test.m; sourceTree = "<group>"; };
+		C6D1A155212E9D5B00B0D6E0 /* UINavigationController+Gesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Gesture.h"; sourceTree = "<group>"; };
+		C6D1A156212E9D5B00B0D6E0 /* UINavigationController+Gesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Gesture.m"; sourceTree = "<group>"; };
+		C6D1A158212EA3A500B0D6E0 /* UIViewController+Gesture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Gesture.h"; sourceTree = "<group>"; };
+		C6D1A159212EA3A500B0D6E0 /* UIViewController+Gesture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Gesture.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +124,10 @@
 				C65F8E20212D63860031216E /* UINavigationItem+HKFixSpace.m */,
 				C6D1A10D212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.h */,
 				C6D1A10E212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m */,
+				C6D1A155212E9D5B00B0D6E0 /* UINavigationController+Gesture.h */,
+				C6D1A156212E9D5B00B0D6E0 /* UINavigationController+Gesture.m */,
+				C6D1A158212EA3A500B0D6E0 /* UIViewController+Gesture.h */,
+				C6D1A159212EA3A500B0D6E0 /* UIViewController+Gesture.m */,
 			);
 			path = "UINavigation-HKFixSpace";
 			sourceTree = "<group>";
@@ -244,6 +254,8 @@
 				C65F8E21212D63860031216E /* UINavigationItem+HKFixSpace.m in Sources */,
 				C65F8E1E212D63560031216E /* HKNavigationFixSpaceConfig.m in Sources */,
 				C65F8E06212D5B240031216E /* ViewController.m in Sources */,
+				C6D1A157212E9D5B00B0D6E0 /* UINavigationController+Gesture.m in Sources */,
+				C6D1A15A212EA3A500B0D6E0 /* UIViewController+Gesture.m in Sources */,
 				C6D1A10F212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m in Sources */,
 				C6D1A154212E97F900B0D6E0 /* VC_Test.m in Sources */,
 				C65F8E11212D5B250031216E /* main.m in Sources */,
