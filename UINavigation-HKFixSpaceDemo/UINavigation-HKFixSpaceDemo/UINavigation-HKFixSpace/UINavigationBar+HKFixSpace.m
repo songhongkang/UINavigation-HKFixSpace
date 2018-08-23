@@ -27,6 +27,5 @@
             subView.layoutMargins = UIEdgeInsetsMake(0, [HKNavigationFixSpaceConfig shared].hk_leftSpace, 0, [HKNavigationFixSpaceConfig shared].hk_rightSpace);
         }
     }
-    
 }
 @end

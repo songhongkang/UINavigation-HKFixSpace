@@ -17,6 +17,7 @@
 		C65F8E1A212D5F740031216E /* UINavigationBar+HKFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E19212D5F740031216E /* UINavigationBar+HKFixSpace.m */; };
 		C65F8E1E212D63560031216E /* HKNavigationFixSpaceConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E1D212D63560031216E /* HKNavigationFixSpaceConfig.m */; };
 		C65F8E21212D63860031216E /* UINavigationItem+HKFixSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E20212D63860031216E /* UINavigationItem+HKFixSpace.m */; };
+		C6D1A10F212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D1A10E212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		C65F8E1D212D63560031216E /* HKNavigationFixSpaceConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HKNavigationFixSpaceConfig.m; sourceTree = "<group>"; };
 		C65F8E1F212D63860031216E /* UINavigationItem+HKFixSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+HKFixSpace.h"; sourceTree = "<group>"; };
 		C65F8E20212D63860031216E /* UINavigationItem+HKFixSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+HKFixSpace.m"; sourceTree = "<group>"; };
+		C6D1A10D212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+HKTool.h"; sourceTree = "<group>"; };
+		C6D1A10E212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+HKTool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +111,8 @@
 				C65F8E1D212D63560031216E /* HKNavigationFixSpaceConfig.m */,
 				C65F8E1F212D63860031216E /* UINavigationItem+HKFixSpace.h */,
 				C65F8E20212D63860031216E /* UINavigationItem+HKFixSpace.m */,
+				C6D1A10D212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.h */,
+				C6D1A10E212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m */,
 			);
 			path = "UINavigation-HKFixSpace";
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				C65F8E21212D63860031216E /* UINavigationItem+HKFixSpace.m in Sources */,
 				C65F8E1E212D63560031216E /* HKNavigationFixSpaceConfig.m in Sources */,
 				C65F8E06212D5B240031216E /* ViewController.m in Sources */,
+				C6D1A10F212E5D6900B0D6E0 /* UIBarButtonItem+HKTool.m in Sources */,
 				C65F8E11212D5B250031216E /* main.m in Sources */,
 				C65F8E03212D5B240031216E /* AppDelegate.m in Sources */,
 				C65F8E1A212D5F740031216E /* UINavigationBar+HKFixSpace.m in Sources */,
@@ -377,14 +383,18 @@
 			baseConfigurationReference = 6B455EB0635D3AB228B43A86 /* Pods-UINavigation-HKFixSpace.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PNAENEN2VW;
 				INFOPLIST_FILE = "UINavigation-HKFixSpaceDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "xxx.UINavigation-HKFixSpace";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5579d458-acda-43d5-b7ed-892443afd65f";
+				PROVISIONING_PROFILE_SPECIFIER = hk_dev_wild;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -394,14 +404,18 @@
 			baseConfigurationReference = 9476195076291421ED98A1E8 /* Pods-UINavigation-HKFixSpace.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = PNAENEN2VW;
 				INFOPLIST_FILE = "UINavigation-HKFixSpaceDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "xxx.UINavigation-HKFixSpace";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "5579d458-acda-43d5-b7ed-892443afd65f";
+				PROVISIONING_PROFILE_SPECIFIER = hk_dev_wild;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

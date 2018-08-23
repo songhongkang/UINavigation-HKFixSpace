@@ -19,18 +19,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setTitle:@"11" forState:UIControlStateNormal];
     btn.backgroundColor = [UIColor redColor];
     btn.frame = CGRectMake(0, 0, 40, 40);
     
     UIButton *btn1 = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn1.backgroundColor = [UIColor redColor];
+    [btn1 setTitle:@"22" forState:UIControlStateNormal];
+    btn1.backgroundColor = [UIColor purpleColor];
     btn1.frame = CGRectMake(0, 0, 40, 40);
 
-    HKNavigationFixSpaceConfig *config = [HKNavigationFixSpaceConfig shared];
-    config.hk_leftSpace = 10;
-    config.hk_rightSpace = 10;
+    UIButton *btn2 = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn2 setTitle:@"33" forState:UIControlStateNormal];
+    btn2.backgroundColor = [UIColor purpleColor];
+    btn2.frame = CGRectMake(0, 0, 40, 40);
     
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    self.navigationItem.leftBarButtonItems = @[[[UIBarButtonItem alloc] initWithCustomView:btn],[[UIBarButtonItem alloc] initWithCustomView:btn2]];
+    
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn1];
 }
 

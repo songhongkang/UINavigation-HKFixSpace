@@ -9,7 +9,6 @@
 #ifndef HK_Macro_h
 #define HK_Macro_h
 #import <objc/runtime.h>
-#define IOS10
 #define hk_iPhoneSystemIOS11 [[UIDevice currentDevice].systemVersion doubleValue] >= 11.0
 
 #endif /* HK_Macro_h */
