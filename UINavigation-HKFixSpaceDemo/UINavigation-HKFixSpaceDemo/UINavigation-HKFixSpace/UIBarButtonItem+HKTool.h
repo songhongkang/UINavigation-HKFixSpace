@@ -10,4 +10,6 @@
 
 @interface UIBarButtonItem (HKTool)
 + (instancetype)hk_initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem target:(id)target action:(SEL)action spaceWidth:(CGFloat)spaceWidth;
+
++ (instancetype)hk_initWithBarButtonTitle:(NSString *)title buttonType:(UIButtonType)buttonType btnClick:(void(^)(void))btnClickEvent;
 @end

@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <Masonry/Masonry.h>
 #import "UINavigation-HKFixSpace/HKNavigationFixSpaceConfig.h"
+#import "UIBarButtonItem+HKTool.h"
 #import "VC_Test.h"
 @interface ViewController ()
 
@@ -19,8 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    [self configNavigation];
-    [self creatUI];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem hk_initWithBarButtonTitle:@"111" buttonType:UIButtonTypeSystem btnClick:^{
+        NSLog(@"111");
+    }];
+
+
 }
 
 - (void)configNavigation
@@ -59,7 +63,7 @@
 
 - (void)btnClick:(UIButton *)sender
 {
-    [self.navigationController pushViewController:[VC_Test new] animated:YES];
+    [self.navigationController pushViewController:[VC_Test new] animated:NO];
 }
 
 - (void)didReceiveMemoryWarning {
