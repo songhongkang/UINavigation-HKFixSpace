@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import <Masonry/Masonry.h>
-#import "UINavigation-HKFixSpace/HKNavigationFixSpaceConfig.h"
 #import "UIBarButtonItem+HKTool.h"
 #import "VC_Test.h"
 @interface ViewController ()
@@ -21,17 +20,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom btnClick:^{
-//        NSLog(@"click");
-//    }];
-
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom title:@"返回" color:[UIColor purpleColor] ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft btnClick:^{
-        NSLog(@"11111111");
+        NSLog(@"btnClick");
     }];
     
     self.navigationItem.rightBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight btnClick:^{
-        NSLog(@"222");
-
+        NSLog(@"btnClick");
     }];
 }
 

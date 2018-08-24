@@ -17,14 +17,14 @@
 
 - (void)viewDidAppear:(BOOL)animated
 {
-//    [super viewDidAppear:animated];
-//    [UIViewController popGestureClose:self];
+    [super viewDidAppear:animated];
+    [UIViewController popGestureClose:self];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-//    [super viewWillDisappear:animated];
-//    [UIViewController popGestureOpen:self];
+    [super viewWillDisappear:animated];
+    [UIViewController popGestureOpen:self];
 }
 
 
