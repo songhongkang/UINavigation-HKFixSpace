@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "UINavigation-HKFixSpace"
-  s.version      = "1.0.1"
+  s.version      = "2.0.0"
 s.summary      = "Solve the problem of spacing between navigation bars"
 
   # This description is used to generate tags and improve search results.
