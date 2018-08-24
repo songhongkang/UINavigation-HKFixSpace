@@ -20,13 +20,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom title:@"返回" color:[UIColor purpleColor] ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft btnClick:^{
-        NSLog(@"btnClick");
-    }];
+//    self.navigationItem.leftBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom title:@"返回" color:[UIColor purpleColor] ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft btnClick:^{
+//        NSLog(@"btnClick");
+//    }];
+//
+//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight btnClick:^{
+//        NSLog(@"btnClick");
+//    }];
     
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight btnClick:^{
-        NSLog(@"btnClick");
-    }];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem hk_initWithBarButtonTitle:@"cancle" buttonType:UIButtonTypeCustom ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft color:[UIColor purpleColor] btnClick:nil];
+
 }
 
 - (void)configNavigation

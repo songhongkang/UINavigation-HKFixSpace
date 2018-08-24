@@ -23,10 +23,11 @@
     return spaceButtonItem;
 }
 
-+ (instancetype)hk_initWithBarButtonTitle:(NSString *)title buttonType:(UIButtonType)buttonType ControlContentHorizontalAlignment:(UIControlContentHorizontalAlignment)ControlContentHorizontalAlignment btnClick:(void(^)(void))btnClickEvent
++ (instancetype)hk_initWithBarButtonTitle:(NSString *)title buttonType:(UIButtonType)buttonType ControlContentHorizontalAlignment:(UIControlContentHorizontalAlignment)ControlContentHorizontalAlignment color:(UIColor *)color btnClick:(void(^)(void))btnClickEvent
 {
     UIButton *btn = [UIButton buttonWithType:buttonType];
     [btn setTitle:title forState:UIControlStateNormal];
+    [btn setTitleColor:color forState:UIControlStateNormal];
     [btn sizeToFit];
     [btn addAction:^(UIButton *btn) {
         if (btnClickEvent){

@@ -26,5 +26,20 @@ NSLog(@"btnClick");
 }];
 
 ```
+`leftBarButtonItem`  默认是距离父视图0.
+需要改变space
+在`AppDelegate`中
+```
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+// Override point for customization after application launch.
+HKNavigationFixSpaceConfig *config = [HKNavigationFixSpaceConfig shared];
+config.hk_leftSpace = 10;
+config.hk_rightSpace = 5;
+config.hk_allowSpace = YES;
+return YES;
+}'
+```
+
+
 
 

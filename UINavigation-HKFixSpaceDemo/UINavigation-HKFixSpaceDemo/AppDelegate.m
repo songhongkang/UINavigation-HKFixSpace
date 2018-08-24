@@ -19,8 +19,7 @@
     // Override point for customization after application launch.
 //    HKNavigationFixSpaceConfig *config = [HKNavigationFixSpaceConfig shared];
 //    config.hk_leftSpace = 10;
-//    config.hk_rightSpace = 5;
-//    config.hk_allowSpace = YES;
+//   config.hk_allowSpace = YES;
     return YES;
 }
 
