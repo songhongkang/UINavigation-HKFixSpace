@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A07BAAC21AC3CFA2586DC011 /* libPods-UINavigation-HKFixSpace.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B5FA88DFE3129921F86C4E5 /* libPods-UINavigation-HKFixSpace.a */; };
+		C62D79D1212FB88200DBBD54 /* UIButton+EdgeInsets.m in Sources */ = {isa = PBXBuildFile; fileRef = C62D79CF212FB88100DBBD54 /* UIButton+EdgeInsets.m */; };
 		C65F8E03212D5B240031216E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E02212D5B240031216E /* AppDelegate.m */; };
 		C65F8E06212D5B240031216E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C65F8E05212D5B240031216E /* ViewController.m */; };
 		C65F8E09212D5B240031216E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C65F8E07212D5B240031216E /* Main.storyboard */; };
@@ -28,6 +29,8 @@
 		0B5FA88DFE3129921F86C4E5 /* libPods-UINavigation-HKFixSpace.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UINavigation-HKFixSpace.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B455EB0635D3AB228B43A86 /* Pods-UINavigation-HKFixSpace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UINavigation-HKFixSpace.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UINavigation-HKFixSpace/Pods-UINavigation-HKFixSpace.debug.xcconfig"; sourceTree = "<group>"; };
 		9476195076291421ED98A1E8 /* Pods-UINavigation-HKFixSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UINavigation-HKFixSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-UINavigation-HKFixSpace/Pods-UINavigation-HKFixSpace.release.xcconfig"; sourceTree = "<group>"; };
+		C62D79CF212FB88100DBBD54 /* UIButton+EdgeInsets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+EdgeInsets.m"; sourceTree = "<group>"; };
+		C62D79D0212FB88200DBBD54 /* UIButton+EdgeInsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+EdgeInsets.h"; sourceTree = "<group>"; };
 		C65F8DFE212D5B240031216E /* UINavigation-HKFixSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UINavigation-HKFixSpace.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C65F8E01212D5B240031216E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C65F8E02212D5B240031216E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				C6D1A159212EA3A500B0D6E0 /* UIViewController+Gesture.m */,
 				C6D1A161212EC16B00B0D6E0 /* UIButton+HKBlock.h */,
 				C6D1A162212EC16B00B0D6E0 /* UIButton+HKBlock.m */,
+				C62D79D0212FB88200DBBD54 /* UIButton+EdgeInsets.h */,
+				C62D79CF212FB88100DBBD54 /* UIButton+EdgeInsets.m */,
 			);
 			path = "UINavigation-HKFixSpace";
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C62D79D1212FB88200DBBD54 /* UIButton+EdgeInsets.m in Sources */,
 				C65F8E21212D63860031216E /* UINavigationItem+HKFixSpace.m in Sources */,
 				C65F8E1E212D63560031216E /* HKNavigationFixSpaceConfig.m in Sources */,
 				C65F8E06212D5B240031216E /* ViewController.m in Sources */,

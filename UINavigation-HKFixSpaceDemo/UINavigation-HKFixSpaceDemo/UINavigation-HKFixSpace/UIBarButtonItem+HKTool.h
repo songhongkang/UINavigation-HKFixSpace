@@ -11,5 +11,10 @@
 @interface UIBarButtonItem (HKTool)
 + (instancetype)hk_initWithBarButtonSystemItem:(UIBarButtonSystemItem)systemItem target:(id)target action:(SEL)action spaceWidth:(CGFloat)spaceWidth;
 
-+ (instancetype)hk_initWithBarButtonTitle:(NSString *)title buttonType:(UIButtonType)buttonType btnClick:(void(^)(void))btnClickEvent;
++ (instancetype)hk_initWithBarButtonTitle:(NSString *)title buttonType:(UIButtonType)buttonType ControlContentHorizontalAlignment:(UIControlContentHorizontalAlignment)ControlContentHorizontalAlignment btnClick:(void(^)(void))btnClickEvent;
+
++ (instancetype)hk_initWithBarButtonImage:(NSString *)imageName buttonType:(UIButtonType)buttonType ControlContentHorizontalAlignment:(UIControlContentHorizontalAlignment)ControlContentHorizontalAlignment btnClick:(void(^)(void))btnClickEvent;
+
++ (instancetype)hk_initWithBarButtonImage:(NSString *)imageName buttonType:(UIButtonType)buttonType title:(NSString *)title color:(UIColor *)color ControlContentHorizontalAlignment:(UIControlContentHorizontalAlignment)ControlContentHorizontalAlignment btnClick:(void(^)(void))btnClickEvent;
+
 @end

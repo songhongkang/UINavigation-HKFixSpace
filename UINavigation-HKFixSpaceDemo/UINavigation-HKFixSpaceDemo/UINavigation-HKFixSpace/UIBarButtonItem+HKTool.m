@@ -11,7 +11,6 @@
 #import "UIButton+HKBlock.h"
 
 @interface UIBarButtonItem()
-@property (nonatomic, copy) void(^eventBlock)(void);
 @end
 
 
@@ -24,7 +23,7 @@
     return spaceButtonItem;
 }
 
-+ (instancetype)hk_initWithBarButtonTitle:(NSString *)title buttonType:(UIButtonType)buttonType btnClick:(void(^)(void))btnClickEvent
++ (instancetype)hk_initWithBarButtonTitle:(NSString *)title buttonType:(UIButtonType)buttonType ControlContentHorizontalAlignment:(UIControlContentHorizontalAlignment)ControlContentHorizontalAlignment btnClick:(void(^)(void))btnClickEvent
 {
     UIButton *btn = [UIButton buttonWithType:buttonType];
     [btn setTitle:title forState:UIControlStateNormal];
@@ -44,17 +43,62 @@
     if(btnHight < 40.0){
         btn.frame = CGRectMake(0, 0, 40.0*btnWidth/btnHight, 40.0);
     }
+    btn.contentHorizontalAlignment = ControlContentHorizontalAlignment;
     UIBarButtonItem *barbuttonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     return barbuttonItem;
 }
 
-
-- (void(^)(void))eventBlock
++ (instancetype)hk_initWithBarButtonImage:(NSString *)imageName buttonType:(UIButtonType)buttonType ControlContentHorizontalAlignment:(UIControlContentHorizontalAlignment)ControlContentHorizontalAlignment btnClick:(void(^)(void))btnClickEvent
 {
-    return objc_getAssociatedObject(self, @selector(setEventBlock:));
+    UIButton *btn = [UIButton buttonWithType:buttonType];
+    [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [btn sizeToFit];
+    
+    [btn addAction:^(UIButton *sender) {
+        if (btnClickEvent) {
+            btnClickEvent();
+        }
+    }];
+    CGFloat btnWidth = CGRectGetWidth(btn.frame);
+    CGFloat btnHight = CGRectGetHeight(btn.frame);
+    
+    if(btnWidth < 40.0){
+        btn.frame = CGRectMake(0, 0, 40.0, 40.0*btnHight/btnWidth);
+    }
+    if(btnHight < 40.0){
+        btn.frame = CGRectMake(0, 0, 40.0*btnWidth/btnHight, 40.0);
+    }
+    btn.contentHorizontalAlignment = ControlContentHorizontalAlignment;
+    UIBarButtonItem *barbuttonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+    return barbuttonItem;
 }
-- (void)setEventBlock:(void (^)(void))eventBlock
+
++ (instancetype)hk_initWithBarButtonImage:(NSString *)imageName buttonType:(UIButtonType)buttonType title:(NSString *)title color:(UIColor *)color ControlContentHorizontalAlignment:(UIControlContentHorizontalAlignment)ControlContentHorizontalAlignment btnClick:(void(^)(void))btnClickEvent
 {
-    objc_setAssociatedObject(self, _cmd, eventBlock, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    UIButton *btn = [UIButton buttonWithType:buttonType];
+    [btn setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [btn setTitle:title forState:UIControlStateNormal];
+    [btn setTitleColor:color forState:UIControlStateNormal];
+    [btn sizeToFit];
+    
+    [btn addAction:^(UIButton *sender) {
+        if (btnClickEvent) {
+            btnClickEvent();
+        }
+    }];
+    CGFloat btnWidth = CGRectGetWidth(btn.frame);
+    CGFloat btnHight = CGRectGetHeight(btn.frame);
+    
+    if(btnHight < 40.0){
+        btn.frame = CGRectMake(0, 0, 40.0*btnWidth/btnHight, 40.0);
+    }
+    if(btnWidth < 40.0){
+        btn.frame = CGRectMake(0, 0, 40.0, 40.0*btnHight/btnWidth);
+    }
+    btn.contentHorizontalAlignment = ControlContentHorizontalAlignment;
+    UIBarButtonItem *barbuttonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
+    
+    return barbuttonItem;
 }
 @end

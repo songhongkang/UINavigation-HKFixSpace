@@ -20,11 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem hk_initWithBarButtonTitle:@"111" buttonType:UIButtonTypeSystem btnClick:^{
-        NSLog(@"111");
+    
+//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom btnClick:^{
+//        NSLog(@"click");
+//    }];
+
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom title:@"返回" color:[UIColor purpleColor] ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentLeft btnClick:^{
+        NSLog(@"11111111");
     }];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem hk_initWithBarButtonImage:@"Image" buttonType:UIButtonTypeCustom ControlContentHorizontalAlignment:UIControlContentHorizontalAlignmentRight btnClick:^{
+        NSLog(@"222");
 
-
+    }];
 }
 
 - (void)configNavigation
